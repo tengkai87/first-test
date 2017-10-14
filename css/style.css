@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+body {
+	font-family: 'lato', sans-serif;
+	line-height: 1.5;
+	margin: 0;
+}
+
+h1, h2, h3 {
+	text-transform: uppercase;
+	font-weight: 300; 
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	padding: 0 5px;
+}
+
+a:hover {
+	border-bottom: 1px solid white; 
+} 
+/* basically got a few commands, hover, active, and one more when clicked through*/
+
+header {
+	text-align: center;
+	text-transform: uppercase;
+	background-color: black;
+	background-image: url(../images/header-bg.jpg);
+	color: white;
+	background-size: cover;
+	padding: 40px 0; 
+	margin-bottom: 30px
+}
+
+
+
+header li {
+	display: inline;
+
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.sidebar {
+	width: 40%;/* 40% of 1000px */ 
+	float: left;
+	background-color: orange;
+	padding: 30px;
+	color: white;
+
+}
+
+.recipe {
+	width: 60%;/* 60% of 1000px */
+	float: right;
+}
+
+
+article{
+	width: 50%;
+	float: left;
+	padding: 0 20px;
+}
+
+article img {
+	width: 100%;
+}
+footer {
+	clear: both;
+	text-align: center;
+	font-size: 10px;
+	font-style: italic;
+	color:white;
+	background-color: orange;
+	padding: 20px 0;
+}
+
+@media (max-width: 1000px) {
+	.sidebar{
+		width:100%;
+		clear: both;
+		margin-bottom:20px;
+	}
+	.recipe, .container{
+		width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	
+	article{
+		width: 100%;
+		}
+}
+
+header ul {
+	padding: 0 0;
+}
+
